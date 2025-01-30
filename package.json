@@ -1,0 +1,20 @@
+{
+  "name": "react_express",
+  "version": "1.0.0",
+  "description": "A sandbox on how to get Vite+React app to be served from a Node backend.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && vite",
+    "dev:backend": "nodemon backend/index.js",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
